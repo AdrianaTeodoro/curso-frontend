@@ -21,3 +21,14 @@ Mac (brew): brew install git
 ## Criar uma conta go GitHub
 
 ## Clonar o projeto
+git clone https://github.com/AdrianaTeodoro/curso-frontend.git
+## Commits
+Informação de alteração
+-após testado todo seu código
+-git add*
+-git commid -m "mensagem"
+-git push (enviar alterações para o repositório)
+-git pull (puxar / trazer do Github para sua máquina)
+
+## GitFlow
+Fluxo do Git
