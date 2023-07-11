@@ -1,0 +1,98 @@
+<!DOCTYPE html> 
+<html  lang= "pt-br">
+	<head>
+		<title>HTML - Layouts</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<style>
+			* {
+			  box-sizing: border-box;
+			}
+
+			body {
+			  font-family: Arial, Helvetica, sans-serif;
+			}
+
+			/* Style the header */
+			header {
+			  background-color: #666;
+			  padding: 20px;
+			  text-align: center;
+			  font-size: 35px;
+			  color: white;
+			}
+
+			/* Create two columns/boxes that floats next to each other */
+			nav {
+			  float: left;
+			  width: 30%;
+			   
+			  background: #ccc;
+			  padding: 20px;
+			}
+
+			/* Style the list inside the menu */
+			nav ul {
+			  list-style-type: none;
+			  padding: 0;
+			}
+
+			article {
+			  float: left;
+			  padding: 20px;
+			  width: 70%;
+			  background-color: #f1f1f1;
+			}
+
+			/* Clear floats after the columns */
+			section::after {
+			  background: #ccc;
+			  content: "";
+			  display: table;
+			  clear: both;
+			}
+
+			/* Style the footer */
+			footer {
+			  background-color: #777;
+			  padding: 10px;
+			  text-align: center;
+			  color: white;
+			}
+
+			/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+			@media (max-width: 600px) {
+			  nav, article {
+			    width: 100%;
+			    height: auto;
+			  }
+			}
+			</style>
+	</head>
+	<body>
+
+		<header>
+			<h2>Curso Front-end - HTML</h2>	
+		</header>
+
+		<section>
+			<nav>
+				<ul>
+					<li><a href="05-layouts.html">Home</a></li>
+					<li><a href="#Sobre">Sobre</a></li>
+					<li><a href="./06-formularios.html">Contato</a></li>
+				</ul>
+			</nav>
+
+			<article>
+					<h1>Título Artigo</h1>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vitae semper eros, eget euismod sapien. Mauris eu augue consequat, luctus tellus quis, maximus neque. Etiam nec vestibulum erat, ac cursus nisl. Pellentesque ultrices porta dapibus. Proin fringilla odio placerat velit porta feugiat. Sed lectus dui, volutpat id eros sit amet, mollis varius sem. Maecenas eros magna, imperdiet at iaculis at, rhoncus nec sapien. Nulla quis massa auctor, sagittis lorem fermentum, maximus nunc.</p>
+
+					<p>Fusce magna metus, aliquam eget nibh sed, fringilla dapibus quam. Sed non lorem sagittis, tincidunt erat a, porttitor nisi. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum in mi sed nisl posuere tincidunt et sed turpis. Sed magna risus, pellentesque vitae dignissim non, bibendum ut eros. Suspendisse viverra nulla urna, quis hendrerit lacus tincidunt ullamcorper. Nunc tincidunt enim nisl, et dapibus ligula molestie in. Donec placerat pulvinar neque a placerat. Nullam volutpat dolor convallis, pulvinar ligula eget, auctor neque. Pellentesque tincidunt feugiat enim ut hendrerit. Integer lectus dolor, pulvinar non purus non, rutrum feugiat odio. Integer sagittis, tellus nec feugiat lobortis, leo tellus consequat orci, et accumsan massa quam et mauris. In viverra diam lobortis tempus sagittis.</p>
+			</article>
+		</section>
+		<footer>
+			<p>Desenvolvido por Adriana Aires</p>
+		</footer>	
+	</body>	
+</html>
